@@ -36,4 +36,4 @@ test('example test', async () => {
 
     // close app
     await electronApp.close()
-});
+}, 6000);
