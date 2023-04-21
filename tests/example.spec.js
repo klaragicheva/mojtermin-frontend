@@ -20,7 +20,8 @@ test('get started link', async ({page}) => {
 });
 
 test('example test', async () => {
-    const electronApp = await electron.launch({ args: ['.'] })
+    const appPath = require('path').join(__dirname, '../public/main.js');
+    const electronApp = await electron.launch({ args: [appPath] });
     const isPackaged = await electronApp.evaluate(async ({ app }) => {
         // This runs in Electron's main process, parameter here is always
         // the result of the require('electron') in the main app script.
