@@ -1,14 +1,6 @@
 // @ts-check
 const {_electron: electron} = require('playwright')
 const {test, expect} = require('@playwright/test');
-//import { test, expect } from '@playwright/experimental-ct-react';
-import App from '../src/App';
-
-/*test('should work', async ({ mount }) => {
-    const component = await mount(<App />);
-    await expect(component).toContainText('Electron app');
-});*/
-
 
 test('has title', async ({page}) => {
     await page.goto('https://playwright.dev/');
