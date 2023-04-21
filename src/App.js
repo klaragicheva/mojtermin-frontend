@@ -72,8 +72,7 @@ function App() {
     }
 
     return (
-        <div><h1>Electron app</h1></div>
-/*        <ConfigProvider theme={{
+        <ConfigProvider theme={{
         algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
     }}>
         <div>
@@ -91,9 +90,9 @@ function App() {
                                     <Link to={route.path}>{route.title}</Link>
                                 </Menu.Item>);
                             })}
-                            {/!*                            <Menu.Item key="fromMongo" icon={<DatabaseOutlined/>} onClick={() => {
+                            {/*                            <Menu.Item key="fromMongo" icon={<DatabaseOutlined/>} onClick={() => {
                                 handleFromMongo()
-                            }}>From MongoDB (online)</Menu.Item>*!/}
+                            }}>From MongoDB (online)</Menu.Item>*/}
                             <Menu.Item key="mode">
                                 <Switch
                                     checkedChildren={<SmileOutlined/>}
@@ -116,28 +115,28 @@ function App() {
                         </Menu>
                     </Header>
                     <Content style={{padding: '30px 0px'}}>
-                        {/!* <Layout className="site-layout">*!/}
+                        {/* <Layout className="site-layout">*/}
                         <Content style={{margin: '10px', overflow: 'initial'}}>
                             <Routes>
-                                {/!*{routes.map((route) => {
+                                {/*{routes.map((route) => {
                                         return (
                                             <Route key={route.path} path={route.path} element={route.component} exact>
                                                 {route.component}
                                             </Route>
                                         );
-                                    })}*!/}
+                                    })}*/}
                                 <Route path="/zdravstvenZavod" element={<ZdravstvenZavod/>}/>
                                 <Route path="/specialist" element={<ZdravstvenZavod/>}/>
-                                {/!*<Route path="/fromMongo"/>*!/}
+                                {/*<Route path="/fromMongo"/>*/}
                             </Routes>
                         </Content>
-                        {/!* </Layout>*!/}
+                        {/* </Layout>*/}
                     </Content>
                     <Footer style={{textAlign: 'center'}}>Moj Termin - Klara Gicheva</Footer>
                 </Layout>
             </Router>
         </div>
-    </ConfigProvider>*/);
+    </ConfigProvider>);
 }
 
 export default App;
